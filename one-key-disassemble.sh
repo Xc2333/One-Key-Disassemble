@@ -12,9 +12,7 @@
 read -p "要反编译的文件夹路径是? (请拖动文件夹到这里,文件夹名称请勿带空格!):  " path
 
 #creat refs.txt
-echo $path
-
-cd $path
+cd "$path"
 cat <<END >refs.txt
 External(MDBG,MethodObj,1)
 External(_GPE.MMTB,MethodObj,0)
