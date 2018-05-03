@@ -29,9 +29,9 @@ fi
 #remove SSDT-xx.aml
 cd "$path"
 xc="$path/SSDT-x*.aml"
-if [ ! -f "$xc" ];
+if [ ! -f "$xc" -o "$xcc" ];
 then
-rm SSDT-x*.aml
+rm SSDT-x*.aml SSDT-*x.aml
 else
 echo *********************很好,没有动态SSDT文件****************************
 fi
