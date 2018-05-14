@@ -50,7 +50,7 @@ else
 #creat refs.txt
 cd "$path"
 cat <<END >refs.txt
-External(MDBG,MethodObj,1)
+External(MDBG,MethodObj)
 External(_GPE.MMTB,MethodObj,0)
 External(_SB.PCI0.LPCB.H_EC.ECWT,MethodObj,2)
 External(_SB.PCI0.LPCB.H_EC.ECRD,MethodObj,1)
